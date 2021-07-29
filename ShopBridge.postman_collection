@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "c95b7438-c6db-4d54-8ca9-b7035d95dc0a",
+		"name": "extra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UpdateInventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Id\" : 2, \r\n  \"Name\": \"\",\r\n  \"Description\": \"\",\r\n  \"Quantity\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44338/inventory/modify",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44338",
+					"path": [
+						"inventory",
+						"modify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllInventories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44338/inventory/getitems",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44338",
+					"path": [
+						"inventory",
+						"getitems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteInventory",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44338/inventory/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44338",
+					"path": [
+						"inventory",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddInventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Name\": \"Refrigrator\",\r\n  \"Description\": \"Samsung Brand 2 Door\",\r\n  \"Price\": 36999.25,\r\n  \"Quantity\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44338/inventory/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44338",
+					"path": [
+						"inventory",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
